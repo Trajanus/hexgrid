@@ -8,5 +8,15 @@ namespace hexgrid
 {
     public class Hex
     {
+        private int pixelRadius;
+        public Hex(int radius)
+        {
+            pixelRadius = radius;
+        }
+
+        public int GetWidth()
+        {
+            return pixelRadius * 2;
+        }
     }
 }
